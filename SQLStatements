@@ -1,0 +1,8 @@
+create database AddressBook;
+use AddressBook;
+create table contacts (
+  first_name VARCHAR(50),
+  last_name VARCHAR(50),
+  address VARCHAR(200),
+  phone VARCHAR(20)
+);

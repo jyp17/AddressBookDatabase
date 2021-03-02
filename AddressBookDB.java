@@ -13,7 +13,7 @@ public class AddressBookDB {
 			connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/AddressBook", "root", "password");
 			statement = connect.createStatement();
 			
-			Menu();
+			menu();
 			
 		} catch(Exception e) {
 			System.out.println("Can't establish a connection to database.");
@@ -145,7 +145,7 @@ public class AddressBookDB {
 	}
 	
 	// the menu that the user will use to make changes to the address book
-	public void Menu() {
+	public void menu() {
 		int userSelection;
 		boolean isActive = true;
 		Scanner menuSelect = new Scanner(System.in);
